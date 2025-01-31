@@ -28,7 +28,7 @@ body, html{
 }
 main{
     
-    height: 100dvh;
+    height: 100vh;
     width: 100vw;
     position: relative; /*Para centralizar no section#login*/
 }
@@ -149,7 +149,6 @@ form > input[type=submit]:hover{
 }
 
 form > a.botao{
-    color: rgb(0, 0, 0);
     display: block;
     text-align: center;
     font-size: 0.9em;
@@ -161,6 +160,11 @@ form > a.botao{
     text-decoration: none; /*Tira o sublinhado*/
     transition: all 2s;
     
+}
+
+/*Botão email*/
+form > a > span{
+    transform: translateY(6px); /*Alinhamento para cima*/
 }
 form > a.botao:hover{
     background-color: #2391db18;
