@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+Cores:
+      Azul bb: #d1eaee 
+      Bege: #ffe6db
+*/
+
+/*                                  PARA O TABLET                                      
+                                  de 768px à 992px                        
+*/
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom, #d1eaee , #ffe6db);
+    }
+    section#login{
+        
+        width: 90vw;
+        box-shadow: -20px 0px 25px -14px rgba(0, 0, 0, 0.384);
+        /*Para ocultar tudo que estiver fora da margem e deixa-lá arredondada*/
+    }
+    section#login > div#imagem{
+        float: left; /*Forumalário para esquerda*/
+        background-image: url(../img/login_tablet.jpg);
+        height: 100%; /*Para aparecer a imagem*/
+        width: 40%;
+
+        background-size: cover;
+        background-position: left;/*Direcionando a imagem*/
+        
+        
+    }
+    
+    section#login > div#formulario{
+        
+        float: right; /*Imagem para direita*/
+        width: 60%; 
+        box-shadow: 0px -20px 56px 46px rgba(255, 255, 255, 0);
+        transform: translateY(30%); /*Alinhamento para baixo*/
+        
+    }
+    div#formulario > h1{
+        font-size: 1.8em;   
+    }
+    div#formulario > p{
+        font-size: 1.1em;
+    }
+    
+    
+}

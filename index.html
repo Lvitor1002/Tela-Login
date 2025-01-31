@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style_celular_geral.css">
+    <link rel="stylesheet" href="styles/style_tablet.css">
+    <link rel="stylesheet" href="styles/style_desktop.css">
+    <link rel="shortcut icon" href="img/sign_multimedia_option_arrow_login_import_icon_258787.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <main>
+        <section id="login">
+
+            <div id="Sombra"></div>
+
+            <div id="imagem">
+                
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a). Faça o login preenchendo os campos abaixo.</p>
+
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+
+                        <input type="email" 
+                               name="email" 
+                               id="idusuario" 
+                               placeholder="Entre com o email" 
+                               autocomplete="email"
+                               required maxlength="30"
+                               id="input1"
+                               >
+                        <label for="idusuario">Usuário</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+
+                        <input type="password" 
+                               name="senha" 
+                               id="idsenha" 
+                               placeholder="Entre com a senha" 
+                               autocomplete="current-password"
+                               required minlength="8" maxlength="15"
+                               id="input2"
+                               >
+                        <label for="idsenha">Senha</label>
+                    </div>
+                    
+                    <input type="submit" value="Entrar">
+                    <a class="botao" href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
