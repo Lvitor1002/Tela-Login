@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style_celular_geral.css">
-    <link rel="stylesheet" href="styles/style_tablet.css">
-    <link rel="stylesheet" href="styles/style_desktop.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/celular.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="img/sign_multimedia_option_arrow_login_import_icon_258787.png" type="image/x-icon">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <main>
-        <section id="login">
-
-            <div id="Sombra"></div>
-
-            <div id="imagem">
+        <div class="flex">
+            <img src="img/login_celular.jpg" alt="Logo">
+        </div>
+        <section class="telalogin">
+            
+            <div class="flex">
                 
-            </div>
-
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a). Faça o login preenchendo os campos abaixo.</p>
-
-                <form action="login.js" method="post" autocomplete="on">
-                    <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
-
-                        <input type="email" 
-                               name="email" 
-                               id="idusuario" 
-                               placeholder="Entre com o email" 
-                               autocomplete="email"
-                               required maxlength="30"
-                               id="input1"
-                               >
-                        <label for="idusuario">Usuário</label>
-                    </div>
-                    <div class="campo">
-                        <span class="material-symbols-outlined">lock</span>
-
-                        <input type="password" 
-                               name="senha" 
-                               id="idsenha" 
-                               placeholder="Entre com a senha" 
-                               autocomplete="current-password"
-                               required minlength="8" maxlength="15"
-                               id="input2"
-                               >
-                        <label for="idsenha">Senha</label>
-                    </div>
+                <div class="titulo">
+                    <h1>Login</h1>
+                </div>
+                
+                <div class="formulario">
                     
-                    <input type="submit" value="Entrar">
-                    <a class="botao" href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
-                </form>
-            </div>
-        </section>
+                    <form action="" method="post" autocomplete="on"> 
+                        
+                        <div class="campo">
+                            
+                                <input type="text"
+                                   name="nome"
+                                   id="idnome"
+                                   placeholder="Usuário"
+                                   required maxlength="30"
+                                   >
+                                   
+                                   <i class="bi bi-person"></i>
+                            <label for="idnome"></label>
+                        </div><!-- Fim | campo1 -->
 
+                        <div class="campo">
+                                <input type="password"
+                                   name="senha"
+                                   id="idsenha"
+                                   placeholder="Senha"
+                                   autocomplete="current-password"
+                                   required minlength="8" maxlength="15"
+                                   >
+                                   <i class="bi bi-key"></i>
+                            <label for="idsenha"></label>
+                            
+                            
+                        </div><!-- Fim | campo2 -->
+
+                        <div class="esqueci-senha">
+                            <input type="checkbox" id="idlembrar">
+                            <label for="idlembrar">Relembre-me</label>
+                            <p></p>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div><!-- Fim | esqueci-senha -->
+                        
+                        <div class="input-entre">
+                            <input type="submit" value="Entre">
+                        </div>
+
+                    </form>
+                </div><!-- Fim | formulario -->
+            </div><!-- Fim | flex -->
+        </section><!-- Fim | tela-login -->
     </main>
 </body>
 </html>

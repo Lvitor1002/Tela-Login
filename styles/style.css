@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/*
+Cores:
+      Azul bb: #d1eaee 
+      Bege: #ffe6db
+*/
+
+
+/* ESTILO [GERAL] */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #b2dae0 ,#d1eaeedc ,rgb(255, 255, 255),rgb(255, 255, 255), #ffe6dbd3, #e7c9bc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+/* Centraliza a área de login */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-flow: column nowrap;
+}
+.flex img{
+    max-width: 1280px;
+    border-radius: 20px 20px 0 0;
+
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px; /* Altura da tela de login */
+    max-width: 610px; /* Largura da tela de login */
+
+    
+    
+}
+.telalogin {
+    max-width: 1280px;
+    
+    border-radius: 0 0 20px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 340px; /* Altura da tela de login */
+    max-width: 610px; /* Largura da tela de login */
+    box-shadow: 0px 20px 39px -16px rgba(0, 0, 0, 0.205);
+}
+
+
+
+
+/* Centraliza os itens dentro do login */
+.flex{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+  
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.titulo h1 {
+    width: 100%; /* Faz o fundo ocupar 100% da largura */
+    text-align: center; /* Centraliza o texto */
+    font-weight: 1000;
+    font-size: 32px;
+    box-shadow: 0px 0px 86px 88px rgb(255, 255, 255);
+}
+
+/* Ajusta os campos do formulário */
+.campo {
+    position: relative;
+    padding: 15px 0;
+    width: 450px;
+    display: flex;
+    align-items: center;
+}
+
+
+.campo input{
+    width: 100%;
+    padding: 10px 35px 10px 10px; /* Adiciona espaço para o ícone dentro do input */
+    transition: all 2s;
+}
+.campo input:hover{
+    border: 1px solid #f8dacd;
+    transition-duration: 1s;
+    background-color: #f3dfd71f;
+}
+
+
+/* Estiliza o ícone */
+.campo i {
+    position: absolute; /* Fixa a posição do ícone */
+    right: 10px; /* Mantém o ícone dentro do input à direita */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 22px;
+    color: #000000; /* Cor do ícone */
+}
+
+.campo  input::placeholder{
+    position: relative;
+    color: rgba(0, 0, 0, 0.438);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 5px 12px;
+    border-radius: 50px;
+    width: 100%;
+    border: .5px solid white;
+    outline: none; /* tira o contorno */
+
+}
+
+
+/* Lembre-me e Esqueceu a senha */
+.esqueci-senha{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    outline: none; /* tira o contorno */
+    
+}
+
+
+input[type="checkbox"]{
+    position: relative;
+    outline: none; /* tira o contorno */
+    transform: scale(1.6);
+    left: 5px;
+    cursor: pointer;
+}
+
+.esqueci-senha label{
+    position: relative;
+    font-size: 19px;
+    right: 25px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.377);
+    
+}
+.esqueci-senha label:hover{
+    color: rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+.esqueci-senha > p{
+    width: 14%;
+    
+}
+.esqueci-senha > a{
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.377);
+    transition: all 2s;
+    
+}
+.esqueci-senha > a:hover{
+    color: rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+
+/* input de envio */
+.input-entre{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input-entre input{
+    padding: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    border: 0.5px solid white;
+    border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
