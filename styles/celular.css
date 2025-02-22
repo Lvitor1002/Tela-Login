@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 615px){
+    /* ESTILO [GERAL] 615 */
+
+    html {
+        background-color: rgb(253, 253, 253);
+    }
+   .flex{ 
+       flex-direction: column;
+       
+   }
+   main{
+    width: 75%;
+    height: 70vh;
+    }
+    .titulo h1 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+   .campo{
+    width: 50%;
+   }
+
+   .campo{
+    width: 99%;
+   }
+   .esqueci-senha > p{
+    position: relative;
+    height: 20px;
+    width: .5%;
+    left: 1px;
+    background-color: rgba(0, 0, 0, 0.151);
+    }
+   .esqueci-senha > a{
+    font-size: 16px;
+   
+   }
+   .esqueci-senha label{
+    left: 4px;
+    font-size: 16px;
+    
+    }
+    .input-entre{
+        padding-bottom: 7px;
+        
+    }
+    .input-entre input{
+        font-size: 18px;
+        font-weight: 0;
+    }
+   
+   
+}
